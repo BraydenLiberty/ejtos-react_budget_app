@@ -9,7 +9,7 @@ import AllocationForm from './components/AllocationForm';
 import RemainingBudget from './components/Remaining';
 
 const App = () => {
-    return (
+    return ( 
         <AppProvider>
             <div className='container'>
                 <h1 className='mt-3'>Company's Budget Allocation</h1>

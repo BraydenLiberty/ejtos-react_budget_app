@@ -59,10 +59,16 @@ export const AppReducer = (state, action) => {
             };
         case 'SET_BUDGET':
             action.type = "DONE";
+            /*
             state.budget = action.payload;
 
             return {
                 ...state,
+            };
+            */
+            return {
+                ...state, // Spread operator to copy the existing state
+                budget: action.payload, // Update the budget with the payload
             };
         case 'CHG_CURRENCY':
             action.type = "DONE";
